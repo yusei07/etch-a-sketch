@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>etch a sketch!</title>
+    <!-- <link rel="icon" type="image/x-icon" href="assets/boba.png" /> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="container-left">
+          <div class="controls">
+            <input id="colorPicker" type="color" value="#333333" />
+            <button id="colorButton">Color mode</button>
+            <button id="rainbowButton">Rainbow mode</button>
+            <button id="eraserButton">Eraser</button>
+            <button id="clearButton">Clear</button>
+          </div>
+          <div class="box">
+            <input id="rangeSlider" type="range" class="range" value="0" min="0" max="100">
+            <span id="rangeValue">1 x 1</span>
+          </div>
+        </div>
+        <div class="container-right">
+          <div id="grid" class="grid"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>yu.sketch</p>
+    </footer>
+  </body>
+</html>
